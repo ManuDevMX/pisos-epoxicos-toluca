@@ -1,6 +1,4 @@
-/* =========================
-   ESTILOS GENERALES
-========================= */
+/* ESTILOS GENERALES */
 
 body {
     margin: 0;
@@ -11,9 +9,7 @@ body {
 }
 
 
-/* =========================
-   ENCABEZADO
-========================= */
+/* ENCABEZADO*/
 .hero {
     background-image:
         linear-gradient(
@@ -62,9 +58,7 @@ body {
     max-width: 950px;
     line-height: 1.4;
 }
-/* =========================
-   BOTÓN DE WHATSAPP
-========================= */
+/*BOTÓN DE WHATSAPP */
 
 .boton-whatsapp {
     display: inline-block;
@@ -93,9 +87,7 @@ body {
 }
 
 
-/* =========================
-   SECCIONES
-========================= */
+/* SECCIONES */
 
 section {
     padding: 40px 20px;
@@ -114,9 +106,7 @@ section {
 }
 
 
-/* =========================
-   SERVICIOS
-========================= */
+/* SERVICIOS */
 
 .servicios {
     display: grid;
@@ -125,9 +115,7 @@ section {
 }
 
 
-/* =========================
-   TARJETAS
-========================= */
+/* TARJETAS */
 
 .card {
     background: rgb(249, 249, 247);
@@ -188,9 +176,7 @@ section {
 }
 
 
-/* =========================
-   GALERÍA
-========================= */
+/* GALERÍA */
 
 .galeria {
     display: grid;
@@ -214,9 +200,7 @@ section {
 }
 
 
-/* =========================
-   COMENTARIOS
-========================= */
+/* COMENTARIOS */
 
 .comentarios {
     background: white;
@@ -241,9 +225,7 @@ section {
 }
 
 
-/* =========================
-   PIE DE PÁGINA
-========================= */
+/* PIE DE PÁGINA*/
 
 footer {
     background: #F39C12;
@@ -259,9 +241,7 @@ footer p {
 }
 
 
-/* =========================
-   VISOR DE IMÁGENES
-========================= */
+/* VISOR DE IMÁGENES*/
 
 .visor {
     display: none;
@@ -316,9 +296,7 @@ footer p {
 }
 
 
-/* =========================
-   FLECHAS DEL VISOR
-========================= */
+/* FLECHAS DEL VISOR */
 
 .flecha {
     position: absolute;
@@ -346,9 +324,7 @@ footer p {
 }
 
 
-/* =========================================
-   AJUSTES RESPONSIVOS PARA TABLET
-========================================= */
+/* AJUSTES RESPONSIVOS PARA TABLET */
 
 @media (max-width: 768px) {
 
@@ -488,9 +464,7 @@ footer p {
 }
 
 
-/* =========================================
-   AJUSTES PARA CELULAR
-========================================= */
+/* AJUSTES PARA CELULAR */
 
 @media (max-width: 480px) {
 
@@ -592,9 +566,7 @@ footer p {
         padding: 6px 9px;
     }
 }
-/* =========================
-   WHATSAPP FLOTANTE
-========================= */
+/* WHATSAPP FLOTANTE*/
 
 .whatsapp-flotante {
     position: fixed;
@@ -745,4 +717,234 @@ footer p {
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
+}
+.contacto button{
+    transition:.3s;
+}
+
+.contacto button:hover{
+    transform:scale(1.02);
+}
+/* MENÚ PRINCIPAL + NAVEGACIÓN ENTRE SECCIONES */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+#inicio,
+#servicios,
+#nosotros,
+#proyectos,
+#cotizacion {
+    scroll-margin-top: 85px;
+}
+
+.menu-principal {
+    position: sticky;
+    top: 0;
+    z-index: 950;
+    width: 100%;
+    background: #15120e;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
+}
+
+.menu-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+}
+
+.menu-principal a {
+    display: block;
+    padding: 18px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.menu-principal a:hover,
+.menu-principal a:focus-visible {
+    color: #F39C12;
+    background: rgba(255, 255, 255, 0.06);
+    border-bottom-color: #F39C12;
+    outline: none;
+}
+
+
+/* APARTADO GENERAL DE PROYECTOS REALIZADOS */
+
+.proyectos-realizados {
+    max-width: none;
+    width: 100%;
+    margin-top: 45px;
+    padding: 70px 20px;
+    background: #eeeeee;
+    box-sizing: border-box;
+}
+
+.encabezado-proyectos {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.etiqueta-proyectos {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #15120e;
+    color: #F39C12;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.encabezado-proyectos h2 {
+    margin: 0 0 16px;
+    color: #F39C12;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.encabezado-proyectos p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.contenedor-proyectos {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proyecto-item {
+    max-width: none;
+    padding: 48px 0;
+}
+
+.proyecto-item + .proyecto-item {
+    border-top: 2px solid rgba(243, 156, 18, 0.28);
+}
+
+.proyecto-item .titulo-seccion {
+    margin-bottom: 26px;
+}
+
+
+/* MENÚ Y PROYECTOS EN TABLET */
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    #inicio,
+    #servicios,
+    #nosotros,
+    #proyectos,
+    #cotizacion {
+        scroll-margin-top: 70px;
+    }
+
+    .menu-contenedor {
+        justify-content: flex-start;
+        gap: 0;
+        overflow-x: auto;
+        padding: 0 8px;
+        scrollbar-width: none;
+    }
+
+    .menu-contenedor::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-principal a {
+        flex: 0 0 auto;
+        padding: 15px 13px;
+        font-size: 14px;
+    }
+
+    .proyectos-realizados {
+        padding: 52px 15px;
+    }
+
+    .encabezado-proyectos {
+        margin-bottom: 15px;
+    }
+
+    .encabezado-proyectos h2 {
+        font-size: 34px;
+    }
+
+    .encabezado-proyectos p {
+        font-size: 16px;
+    }
+
+    .proyecto-item {
+        padding: 38px 0;
+    }
+}
+
+
+/* MENÚ Y PROYECTOS EN CELULAR */
+
+@media (max-width: 480px) {
+
+    html {
+        scroll-padding-top: 62px;
+    }
+
+    #inicio,
+    #servicios,
+    #nosotros,
+    #proyectos,
+    #cotizacion {
+        scroll-margin-top: 62px;
+    }
+
+    .menu-principal a {
+        padding: 13px 11px;
+        font-size: 13px;
+    }
+
+    .proyectos-realizados {
+        margin-top: 25px;
+        padding: 42px 12px;
+    }
+
+    .etiqueta-proyectos {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .encabezado-proyectos h2 {
+        font-size: 29px;
+    }
+
+    .encabezado-proyectos p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .proyecto-item {
+        padding: 32px 0;
+    }
 }
