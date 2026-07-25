@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pisos Epóxicos Toluca</title>
     <link rel="icon" type="image/png" href="img/logolmao.png">
-    <link rel="stylesheet" href="pug/estilos.css?v=3">
+    <link rel="stylesheet" href="pug/estilos.css?v=4">
 </head>
     <!-- hecho en pugmanutech -->
 <body>
 
-    <header class="hero">
+<nav class="menu-principal" aria-label="Navegación principal">
+    <div class="menu-contenedor">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cotizacion">Cotización</a>
+    </div>
+</nav>
+
+<header class="hero" id="inicio">
     <div class="overlay">
         <img src="img/logolmao.png" alt="Logo Pisos Epóxicos Toluca" class="logo-principal">
 
@@ -25,7 +35,7 @@
 </header>
 
 
-    <section>
+    <section id="servicios">
         <h2 class="titulo-seccion">Nuestros servicios</h2>
 
         <div class="servicios">
@@ -44,7 +54,7 @@
         </div>
     </section>
         
-    <section>
+    <section id="nosotros">
     <h2 class="titulo-seccion">Sobre nosotros</h2>
 
     <div class="card card-informacion">
@@ -141,7 +151,20 @@
     </div>
 </section>
 
-    <section>
+<section class="proyectos-realizados" id="proyectos">
+    <div class="encabezado-proyectos">
+        <span class="etiqueta-proyectos">Trabajos reales</span>
+        <h2>Proyectos realizados</h2>
+        <p>
+            Conoce algunos de los trabajos realizados por nuestro equipo en
+            hogares, fábricas, comercios e instalaciones industriales.
+            Todas las fotografías corresponden a proyectos reales.
+        </p>
+    </div>
+
+    <div class="contenedor-proyectos">
+
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Marimbas y franjas</h2>
 
         <div class="galeria" data-seccion="marimbas">
@@ -153,7 +176,7 @@
     </section>
 
     <!-- 10/07/26 Victor Gael Pérez Hernández -->
-    <section>
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Autonivelante</h2>
 
         <div class="galeria" data-seccion="autonivelante">
@@ -178,7 +201,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Acabado Epoxico Hojuela</h2>
         <div class="galeria" data-seccion="Acabado_epoxico_hojuela">
             <img src="Acabado_epoxico_hojuela/paso 1.jpeg" alt="1.Se realiza el desbaste y lijado del concreto para eliminar residuos, partes flojas e irregularidades. Esto permite que el sistema epóxico tenga una mejor adherencia.">
@@ -199,7 +222,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Acabado Marmoleado</h2>
         <div class="galeria" data-seccion="Acabado_Mormoleado"> 
             <img src="Acabado_Mormoleado/1.jpeg" alt="1.Preparación inicial del piso. Se inicia con la limpieza y preparación de la superficie para retirar suciedad, residuos y dejar el concreto listo para trabajar.">
@@ -212,7 +235,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Antiderrapante con zoclo sanitario</h2>
         <div class="galeria" data-seccion="Antiderrapante_con_zoclo_sanitario">
            <img src="Antiderrapante_con_zoclo_sanitario/1.jpeg"
@@ -244,8 +267,9 @@
 <img src="Antiderrapante_con_zoclo_sanitario/14.jpeg"
      alt="14. Resultado final. Sistema antiderrapante con zoclo sanitario completamente terminado, ideal para áreas que requieren higiene, seguridad y resistencia.">
         </div>
-         
-    <section>
+    </section>
+
+    <section class="proyecto-item">
         <h2 class="titulo-seccion">Mortero epóxico con acabado autonivelante</h2>
 
         <div class="galeria" data-seccion="mortero">
@@ -276,7 +300,10 @@
         </div>
     </section>
 
-   <section>
+    </div>
+</section>
+
+<section>
     <!-- <h2 class="titulo-seccion">Comentarios</h2> -->
 
          <div class="comentarios">
@@ -294,9 +321,8 @@
 
 
 </section>
-</section>
 
-<section class="contacto">
+<section class="contacto" id="cotizacion">
     <h2>Solicita tu cotización gratuita</h2>
 
     <form id="formulario-cotizacion">
