@@ -217,3 +217,31 @@ Mensaje: ${mensaje || "Sin mensaje adicional"}
 
     window.open(enlace, "_blank");
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const elementosAnimados = document.querySelectorAll(
+        ".titulo-seccion, .card, .galeria, .comentarios, .contacto, .encabezado-proyectos"
+    );
+
+    elementosAnimados.forEach((elemento) => {
+        elemento.classList.add("animar-entrada");
+    });
+
+    const observador = new IntersectionObserver(
+        (entradas, observer) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visible");
+                    observer.unobserve(entrada.target);
+                }
+            });
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    elementosAnimados.forEach((elemento) => {
+        observador.observe(elemento);
+    });
+});

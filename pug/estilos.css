@@ -948,3 +948,85 @@ html {
         padding: 32px 0;
     }
 }
+/* ANIMACIONES AL HACER SCROLL*/
+
+.animar-entrada {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.animar-entrada.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación inicial del encabezado */
+
+.logo-principal {
+    animation: entrada-logo 0.8s ease;
+}
+
+.hero-titulo {
+    animation: entrada-titulo 0.9s ease;
+}
+
+.hero-subtitulo {
+    animation: entrada-subtitulo 1s ease;
+}
+
+@keyframes entrada-logo {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes entrada-titulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entrada-subtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respetar usuarios que desactivan animaciones */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    .animar-entrada {
+        opacity: 1;
+        transform: none;
+    }
+}
