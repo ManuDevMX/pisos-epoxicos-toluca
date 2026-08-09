@@ -16,7 +16,7 @@ Puedes ver el sitio desplegado y funcionando aquí:
 ## 💻 Tecnologías Utilizadas
 * **HTML5** / **CSS3**
 * **JavaScript** (Manejo de lógica y animaciones de scroll)
-* **Pug** (Preprocesador de HTML para plantillas limpias)
+* **CSS** (Preprocesador de HTML para plantillas limpias)
 * **GitHub Pages** (Despliegue y hosting continuo)
 
 ## 📂 Estructura del Repositorio
@@ -26,4 +26,4 @@ Puedes ver el sitio desplegado y funcionando aquí:
 - `Acabado_Mormoleado/` - Muestra de estilos mormoleados.
 - `Antiderrapante_con_zoclo_sanitario/` - Soluciones industriales y comerciales.
 - `javascript/` - Scripts de animación e interactividad.
-- `pug/` - Plantillas base del desarrollo.
+- `pug, CSS/` - Plantillas base del desarrollo.
