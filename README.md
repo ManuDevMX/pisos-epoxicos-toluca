@@ -4,7 +4,7 @@ Sitio web responsivo y optimizado para un negocio local de aplicación de pisos 
 
 ## 🚀 Enlace en Vivo
 Puedes ver el sitio desplegado y funcionando aquí: 
-👉 [Pisos Epóxicos Toluca](https://pugmaniaco117.github.io/pisos-epoxicos-toluca/)
+👉 [Pisos Epóxicos Toluca](https://manudevmx.github.io/pisos-epoxicos-toluca/)
 
 ## ✨ Características Principales
 * **Diseño Responsivo:** Adaptado de forma fluida para dispositivos móviles y computadoras.
