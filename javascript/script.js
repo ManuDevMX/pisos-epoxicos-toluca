@@ -245,3 +245,19 @@ document.addEventListener("DOMContentLoaded", () => {
         observador.observe(elemento);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    if (cookieBanner && acceptBtn) {
+        if (!localStorage.getItem("cookiesAceptadas")) {
+            cookieBanner.style.display = "block";
+        }
+
+        acceptBtn.addEventListener("click", function () {
+            localStorage.setItem("cookiesAceptadas", "true");
+            cookieBanner.style.display = "none";
+        });
+    }
+}); 

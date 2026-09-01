@@ -1062,3 +1062,63 @@ html {
     color: #555555;
     line-height: 1.5;
 }
+
+/*Estilos del Banner de Cookies y Privacidad*/
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 700px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none; /* Se activa mediante JS si no se ha aceptado */
+            font-size: 0.9rem;
+            border: 1px solid #333;
+            font-family: inherit;
+        }
+        .cookie-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+        .cookie-content p {
+            margin: 0;
+            line-height: 1.4;
+        }
+        .cookie-link {
+            color: #F39C12;
+            text-decoration: underline;
+        }
+        .cookie-link:hover {
+            color: #e65100;
+        }
+        .btn-accept-cookies {
+            background-color: #F39C12;
+            color: #ffffff;
+            border: none;
+            padding: 8px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .btn-accept-cookies:hover {
+            background-color: #d68910;
+        }
+        @media (min-width: 600px) {
+            .cookie-content {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+    
